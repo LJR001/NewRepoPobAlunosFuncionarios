@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 
 namespace PobAlunosFuncionarios
 {
-    internal class Funcionario:Pessoas
+    internal class Funcionario : Pessoas
     {
-        int Ra;
-        int DataMatricula;
+        int NumPIS;
+        double Salario;
+        String Cargo;
 
-        public Funcionario(String nome, int dataNasc,long cpf, int ra, int dataMatricula) :base(nome,dataNasc,cpf)
+        public Funcionario(String nome, int dataNasc, int cpf, int numPIS, double salario, string cargo)
+            : base(nome, dataNasc, cpf)
         {
-            Ra = ra;
-            DataMatricula = dataMatricula;
+            NumPIS = numPIS;
+            Salario = salario;
+            Cargo = cargo;
         }
         public override string ToString()
         {
-            return base.ToString() + "\nRa: "+Ra+"\n" +
-                "Data de Matricula "+DataMatricula;
+            return base.ToString() + "\nNumero do PIS: " + NumPIS + "\n" +
+                "Salario: " + Salario + "\n" +
+                "Cargo: " + Cargo;
         }
     }
 }
+
+
+
+
+
