@@ -21,5 +21,21 @@ namespace PobAlunosFuncionarios
             return base.ToString() + "\nRa: " + Ra + "\n" +
                 "Data de Matricula " + DataMatricula;
         }
+        public void setRa()
+        {
+            int ra = int.Parse(Console.ReadLine());
+            this.Ra = ra;
+        }
+        public void getRa()
+        {
+            Console.WriteLine(this.Ra);
+        }
+
+
+        public void setDataMat()
+        {
+            int dataMat = int.Parse(Console.ReadLine());
+            this.DataMatricula = dataMat;
+        }
     }
 }
