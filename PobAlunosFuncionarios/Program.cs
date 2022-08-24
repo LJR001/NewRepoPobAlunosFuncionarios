@@ -6,8 +6,8 @@ namespace PobAlunosFuncionarios
     {
         static void Main(string[] args)
         {
-            Pessoas pessoa1 = new Pessoas("Luciano",05022001,447652);
-            Console.WriteLine(pessoa1.ToString());
+            Funcionario Fun1 = new Funcionario("Luciano",05022001,447652,45612398,05022001);
+            Console.WriteLine(Fun1.ToString());
         }
     }
 }
