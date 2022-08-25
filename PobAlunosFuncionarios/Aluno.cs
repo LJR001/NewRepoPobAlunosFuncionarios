@@ -11,6 +11,8 @@ namespace PobAlunosFuncionarios
         int Ra;
         int DataMatricula;
 
+       
+
         public Aluno(String nome, int dataNasc, long cpf, int ra, int dataMatricula) : base(nome, dataNasc, cpf)
         {
             Ra = ra;
@@ -30,8 +32,6 @@ namespace PobAlunosFuncionarios
         {
             Console.WriteLine(this.Ra);
         }
-
-
         public void setDataMat()
         {
             int dataMat = int.Parse(Console.ReadLine());

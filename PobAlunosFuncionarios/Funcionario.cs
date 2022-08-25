@@ -12,7 +12,7 @@ namespace PobAlunosFuncionarios
         double Salario;
         String Cargo;
 
-        public Funcionario(String nome, int dataNasc, int cpf, int numPIS, double salario, string cargo)
+        public Funcionario(String nome, int dataNasc, long cpf, int numPIS, double salario, string cargo)
             : base(nome, dataNasc, cpf)
         {
             NumPIS = numPIS;
@@ -57,6 +57,7 @@ namespace PobAlunosFuncionarios
         {
             Console.WriteLine(this.Cargo);
         }
+      
     }
 
 }
